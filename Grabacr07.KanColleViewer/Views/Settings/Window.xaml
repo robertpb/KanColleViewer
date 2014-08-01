@@ -26,7 +26,7 @@
 				   Style="{DynamicResource HeaderTextBlockStyleKey}" />
 
 		<CheckBox IsChecked="{Binding Source={x:Static kanColleViewer:App.ViewModelRoot}, Path=TopMost, Mode=TwoWay}"
-				  Margin="15,0,0,10">
+				  Margin="20,0,0,10">
 			<TextBlock Text="{Binding Resources.Settings_Window_TopMost, Source={x:Static models:ResourceService.Current}, Mode=OneWay}"
 					   Foreground="{Binding RelativeSource={RelativeSource AncestorType={x:Type CheckBox}}, Path=Foreground}"
 					   FontSize="13"
@@ -41,7 +41,7 @@
 				   Margin="0,10" />
 		<metro2:CallMethodButton MethodName="SetLocationLeft"
 								 Padding="20,4"
-								 Margin="15,0,0,10"
+								 Margin="20,0,0,10"
 								 HorizontalAlignment="Left">
 			<StackPanel>
 				<TextBlock Text="{Binding Resources.Settings_WindowControl_LocationLeftButton, Source={x:Static models:ResourceService.Current}, Mode=OneWay}"

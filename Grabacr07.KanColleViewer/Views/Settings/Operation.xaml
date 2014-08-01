@@ -19,15 +19,14 @@
 		</ResourceDictionary>
 	</UserControl.Resources>
 
-	<StackPanel IsEnabled="False">
+	<StackPanel>
 		<TextBlock Margin="0,0,0,10">
 			<Run Text="出撃コンディション"
 				 Style="{DynamicResource PickupTextElementStyleKey}" />
 			<Run Text=" " />
-			<Run Text="{Binding Resources.Common_Implement_Oncoming, Source={x:Static models:ResourceService.Current}, Mode=OneWay}" />
 		</TextBlock>
 
-		<StackPanel Margin="15,0,0,0">
+		<StackPanel Margin="20,0,0,0">
 			<TextBlock>
 				<Run Text="艦隊内の全艦のコンディションが次の数値以上になったとき、出撃可能と判断する" />
 			</TextBlock>
@@ -46,7 +45,7 @@
 									 VerticalAlignment="Top" />
 				<TextBlock Grid.Column="2"
 						   TextWrapping="Wrap"
-						   Foreground="{DynamicResource InactiveForegroundBrushKey}">
+						   Foreground="{DynamicResource ForegroundBrushKey}">
 					<Run Text="※通常は、間宮アイコンが消灯する 40 か、自然回復上限の 49 に設定します。" />
 				</TextBlock>
 			</Grid>
